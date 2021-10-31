@@ -35,7 +35,7 @@ The GNU/GCC toolchains harmonize for use with the [real-time-cpp repository](htt
   - Extract one or more of the GNU/GCC toolchains in [ref_app/tools/Util/MinGW/msys/1.0/local directory](./ref_app/tools/Util/MinGW/msys/1.0/local).
   - The executable files are self-extracting archives that extract in-place where they are intended to be, such as via double-click.
   - Following toolchain extraction(s), move or copy the [ref_app/tools directory](./ref_app/tools) to the corresponding location in the [real-time-cpp repository](https://github.com/ckormanyos/real-time-cpp) clone.
-  - Open the `ref_app` VisualStudio(R) solution as shown [here](./images/real-time-cpp-target-avr-build.jpeg), select the solution configuration `target avr` and rebuild it. The results are placed in the temporary `ref_app/bin` directory.
+  - Open the `ref_app` VisualStudio(R) solution as shown [here](./images/real-time-cpp-target-avr-build.jpg), select the solution configuration `target avr` and rebuild it. The results are placed in the temporary `ref_app/bin` directory.
 
 The [following JPG image](./images/real-time-cpp-toolchains.jpg)
 depicts these details and how the topology is arranged.
