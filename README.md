@@ -5,7 +5,7 @@ for building `ref_app` targets for the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 These GNU/GCC toolchains are built to run on Windows(R).
 
-# Using the Toolchains
+# Finding/Extracting the GNU/GCC Toolchains
 
 GNU/GCC toolchains are stored as self-extracting archives in the
 [ref_app/tools/Util/MinGW/msys/1.0/local directory](./ref_app/tools/Util/MinGW/msys/1.0/local).
@@ -27,6 +27,15 @@ This creates the directory `ref_app\tools` which subsequently
 enables the MSVC GNU/GCC target builds to work out-of-the-box in `ref_app.sln`,
 when opened in Microsoft(R) VisualStudio(R).
 
-# Detailed Instructions for the `ref_app` VS Solution
+# Instructions using GNU/GCC Toolchains in `ref_app` VS Solution
 
-TBD
+The GNU/GCC toolchains harmonize for use with the [real-time-cpp repository](https://github.com/ckormanyos/real-time-cpp).
+  - Clone the [real-time-cpp repository](https://github.com/ckormanyos/real-time-cpp), which is the main companion code for the book.
+  - Clone the [real-time-cpp-toolchains repository](https://github.com/ckormanyos/real-time-cpp-toolchains), which is this repository.
+  - Extract one or more of the GNU/GCC toolchains in [ref_app/tools/Util/MinGW/msys/1.0/local directory](./ref_app/tools/Util/MinGW/msys/1.0/local).
+  - The executable files are self-extracting archives that extract in-place where they are intended to be, such as via double-click.
+  - Following toolchain extraction(s), move or copy the [ref_app/tools directory](./ref_app/tools) to the corresponding location in the [real-time-cpp repository](https://github.com/ckormanyos/real-time-cpp) clone.
+
+
+
+The [following JPG image](./images/real-time-cpp-toolchains.jpg) sketches these details and how the topology is arranged.
