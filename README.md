@@ -27,7 +27,7 @@ This creates the directory `ref_app\tools` which subsequently
 enables the MSVC GNU/GCC target builds to work out-of-the-box in `ref_app.sln`,
 when opened in Microsoft(R) VisualStudio(R).
 
-# Instructions using GNU/GCC Toolchains in `ref_app` VS Solution
+# Using GNU/GCC Toolchains with the `ref_app` VS Solution
 
 The GNU/GCC toolchains harmonize for use with the [real-time-cpp repository](https://github.com/ckormanyos/real-time-cpp).
   - Clone the [real-time-cpp repository](https://github.com/ckormanyos/real-time-cpp), which is the main companion code for the book.
@@ -35,7 +35,8 @@ The GNU/GCC toolchains harmonize for use with the [real-time-cpp repository](htt
   - Extract one or more of the GNU/GCC toolchains in [ref_app/tools/Util/MinGW/msys/1.0/local directory](./ref_app/tools/Util/MinGW/msys/1.0/local).
   - The executable files are self-extracting archives that extract in-place where they are intended to be, such as via double-click.
   - Following toolchain extraction(s), move or copy the [ref_app/tools directory](./ref_app/tools) to the corresponding location in the [real-time-cpp repository](https://github.com/ckormanyos/real-time-cpp) clone.
+  - Open the `ref_app` VisualStudio(R) solution, select the solution configuration `target avr` and rebuild it. The results are placed in the temporary `ref_app/bin` directory.
 
+The image below depicts these details and how the topology is arranged.
 
-
-The [following JPG image](./images/real-time-cpp-toolchains.jpg) sketches these details and how the topology is arranged.
+[following JPG image](./images/real-time-cpp-toolchains.jpg)
