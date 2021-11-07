@@ -16,7 +16,7 @@ It is stored in the executable file `gcc-7.3.0-avr.exe`.
 This file can be extracted, for example, via double click
 or suitable command on the command line (cmd).
 
-For instance, extract `gcc-7.3.0-arv.exe` with the command
+For instance, extract `gcc-7.3.0-arv.exe` in `Win*` with the command:
 
 ```cmd
 start /b /wait ./gcc-7.3.0-avr.exe -y -gm2 -InstallPath=".\\gcc-7.3.0-avr"
