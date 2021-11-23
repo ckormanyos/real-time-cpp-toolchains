@@ -5,16 +5,31 @@ for building `ref_app` targets for the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 These GNU/GCC toolchains are built to run on Windows(R).
 
-Supported toolchain targets
+## Supported toolchain targets
 
-| GCC target arch (as used in configure) | Version       | Tools                         |
-| -------------------------------------- | ------------- | ----------------------------- |
-| `avr-gcc`                              | 11.2.0        | avr-libc3, binutils 2.37, avr-libc |
-| `arm-none-eabi-elf-gcc`                | 11.2.0 (TBD)  | newlib 4.1.0, binutils 2.37   |
-| `rl78-unknown-elf-gcc`                 | 11.2.0 (TBD)  | newlib 4.1.0, binutils 2.37   |
-| `rx-elf-gcc`                           | 11.2.0 (TBD)  | newlib 4.1.0, binutils 2.37   |
-| `v850-unknown-elf-gcc`                 | 11.2.0 (TBD)  | newlib 4.1.0, binutils 2.37   |
-| TBD finish 11.2.0 builds               | | |
+| GCC target arch (as used in configure) | Version       | C-Library     | bfd             |
+| -------------------------------------- | ------------- | ------------- | --------------- |
+| `avr-gcc`                              | 11.2.0        | avr-libc3     | binutils 2.37   |
+| `arm-none-eabi-elf-gcc`                | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
+| `rl78-unknown-elf-gcc`                 | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
+| `rx-elf-gcc`                           | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
+| `v850-unknown-elf-gcc`                 | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
+
+## Build details
+
+All builds performed on mingw64/msys2 with `--host=x86_64-x64-mingw32` with preference for static linking.
+
+The following prerequisites have been used.
+  - libiconv 1.16
+  - GMP 6.2.1
+  - MPFR 4.1
+  - MPC 1.2.1
+  - ISL 0.15
+  - cloog 0.18.1
+
+### Patches
+
+TBD: Create patch files for binutils, libiconv, avr-libc3, etc.
 
 # Finding/Extracting the GNU/GCC Toolchains
 
