@@ -5,6 +5,13 @@ for building `ref_app` targets for the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 These GNU/GCC toolchains are built to run on Windows(R).
 
+Supported toolchain targets
+
+| GCC target arch (as used in configure) | Version  | Tools |
+| -------------------------------------- | -------- | ----- |
+| `avr-gcc`                              | 11.2.0   | newlib 4.1.0, binutils 2.37, avr-libc |
+| `rl78-unknown-elf-gcc`                 | 11.2.0   | newlib 4.1.0, binutils 2.37 |
+
 # Finding/Extracting the GNU/GCC Toolchains
 
 GNU/GCC toolchains are stored as self-extracting archives in the
