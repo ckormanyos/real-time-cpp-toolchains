@@ -11,6 +11,7 @@ Supported toolchain targets
 | -------------------------------------- | -------- | ----- |
 | `avr-gcc`                              | 11.2.0   | newlib 4.1.0, binutils 2.37, avr-libc |
 | `rl78-unknown-elf-gcc`                 | 11.2.0   | newlib 4.1.0, binutils 2.37 |
+| TBD finish 11.2.0 builds               | | |
 
 # Finding/Extracting the GNU/GCC Toolchains
 
