@@ -17,15 +17,26 @@ These GNU/GCC toolchains are built to run on Windows(R).
 
 ## Build details
 
-All builds performed on mingw64/msys2 with `--host=x86_64-x64-mingw32` with preference for static linking.
+All builds performed on [mingw64/msys2](https://www.msys2.org)
+with `--host=x86_64-x64-mingw32` with preference for static linking.
 
-The following prerequisites have been used.
-  - libiconv 1.16
-  - GMP 6.2.1
-  - MPFR 4.1
-  - MPC 1.2.1
-  - ISL 0.15
-  - cloog 0.18.1
+The following packages and prerequisites have been used.
+Each package and prerequisite has been built on `--host=x86_64-x64-mingw32`
+with static linkage.
+  - libiconv 1.16 (package)
+  - GMP 6.2.1 (prerequisite)
+  - MPFR 4.1 (prerequisite)
+  - MPC 1.2.1 (prerequisite)
+  - ISL 0.15 (prerequisite)
+  - cloog 0.18.1 (package)
+
+### Configurations
+
+The build of `rl78-unknown-elf-gcc` has been configured with:
+
+```
+../gcc-11.2.0_with_newlib-4.1.0/configure --prefix=/usr/local/gcc-11.2.0-rl78-unknown-elf --target=rl78-unknown-elf --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --with-pkgversion='ckormanyos/real-time-cpp' --enable-static --disable-shared --without-system-zlib --with-newlib --disable-libgomp --disable-libada --disable-libssp --disable-__cxa_atexit --disable-threads --disable-nls --disable-win32-registry --disable-sjlj-exceptions --with-dwarf2 --disable-libquadmath --disable-fixed-point --disable-decimal-float --with-isl=/usr/local/isl-0.15 --with-cloog=/usr/local/cloog-0.18.1 --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0 --with-mpc=/usr/local/mpc-1.2.1 --with-libiconv-prefix=/usr/local/libiconv-1.16
+```
 
 ### Patches
 
@@ -37,15 +48,19 @@ GNU/GCC toolchains are stored as self-extracting archives in the
 [ref_app/tools/Util/MinGW/msys/1.0/local](./ref_app/tools/Util/MinGW/msys/1.0/local)
 directory.
 
-Consider, for instance, the `gcc-avr` toolchain version 7.3.0.
-It is stored in the executable file `gcc-7.3.0-avr.exe`.
-This file can be extracted, for example, via double click
-or suitable command on the command line (cmd).
+Consider, for instance, the `gcc-avr` toolchain version 11.2.0.
+It is stored in the executable file `gcc-11.2.0-avr.exe`.
+This file has been split into several self-extracting
+archives in order to limit individual file storage to 64MB.
 
-For instance, extract `gcc-7.3.0-arv.exe` in `Win*` with the command:
+This file (and its affiliated sub-archives) can be extracted,
+for example, via double click or suitable command
+on the command line (cmd).
+
+For instance, extract `gcc-11.2.0-arv.exe` in `Win*` with the command:
 
 ```cmd
-start /b /wait ./gcc-7.3.0-avr.exe -y -gm2 -InstallPath=".\\gcc-7.3.0-avr"
+start /b /wait ./gcc-11.2.0-avr.exe -y -gm2 -InstallPath=".\\gcc-11.2.0-avr"
 ```
 
 Upon extraction of one or more of the toolchains,
