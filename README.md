@@ -9,7 +9,8 @@ All builds have been performed on [mingw64/msys2](https://www.msys2.org)
 with `--host=x86_64-x64-mingw32`. Builds have preference for static linking.
 
 One single mingw64 DLL --- [`libwinpthread-1.dll`](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app) ---
-is required to run the compilers.
+is required to run the compilers. (See [this issue](https://github.com/ckormanyos/real-time-cpp-toolchains/issues/2)
+for tracking the attempt to remove this remaining dependency.)
 
 ## Supported toolchain targets
 
