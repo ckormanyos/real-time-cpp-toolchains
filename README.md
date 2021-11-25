@@ -11,7 +11,7 @@ These GNU/GCC toolchains are built to run on Windows(R).
 | -------------------------------------- | ------------- | ------------- | --------------- |
 | `avr-gcc`                              | 11.2.0        | avr-libc3     | binutils 2.37   |
 | `arm-none-eabi-elf-gcc`                | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
-| `rl78-unknown-elf-gcc`                 | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
+| `rl78-unknown-elf-gcc`                 | 11.2.0        | newlib 4.1.0  | binutils 2.37   |
 | `rx-elf-gcc`                           | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
 | `v850-unknown-elf-gcc`                 | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
 
