@@ -5,13 +5,6 @@ for building `ref_app` targets for the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 These GNU/GCC toolchains are built to run on Windows(R).
 
-All builds have been performed on [mingw64/msys2](https://www.msys2.org)
-with `--host=x86_64-x64-mingw32`. Builds have preference for static linking.
-
-One single mingw64 DLL --- [`libwinpthread-1.dll`](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app) ---
-is required to run the compilers. (See [this issue](https://github.com/ckormanyos/real-time-cpp-toolchains/issues/2)
-for tracking the attempt to remove this remaining dependency.)
-
 ## Supported Toolchain Targets
 
 | GCC target arch (in `./configure`)    | Version       | C-Library     | libbfd          | Build Time mingw64  |
@@ -25,9 +18,16 @@ for tracking the attempt to remove this remaining dependency.)
 
 ## Build details
 
+All builds have been performed on [mingw64/msys2](https://www.msys2.org)
+with `--host=x86_64-x64-mingw32`. Builds have preference for static linking.
+
+One single mingw64 DLL --- [`libwinpthread-1.dll`](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app) ---
+is required to run the compilers. (See [this issue](https://github.com/ckormanyos/real-time-cpp-toolchains/issues/2)
+for tracking the attempt to remove this remaining dependency.)
+
 The following packages and prerequisites have been used.
 Each package and prerequisite has been built on `--host=x86_64-x64-mingw32`
-with static linkage.
+(favoring static linkage).
   - libiconv 1.16 (package)
   - GMP 6.2.1 (prerequisite)
   - MPFR 4.1 (prerequisite)
@@ -83,7 +83,7 @@ The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github
   - Step 2. Following toolchain extraction(s), move or copy the [ref_app/tools](./ref_app/tools) directory to the corresponding location in the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository clone.
   - Open the `ref_app.sln` VisualStudio(R) solution as shown [here](./images/real-time-cpp-target-avr-build.jpg), select the solution configuration `target avr` and rebuild it. The results are placed in the temporary `ref_app/bin` directory.
 
-# Building a GCC cross toolchain on msys2/mingw64
+# Building a GCC Cross Toolchain on msys2/mingw64
 
 ## Notes
 
