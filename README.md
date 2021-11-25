@@ -5,21 +5,24 @@ for building `ref_app` targets for the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 These GNU/GCC toolchains are built to run on Windows(R).
 
+All builds have been performed on [mingw64/msys2](https://www.msys2.org)
+with `--host=x86_64-x64-mingw32`. Builds have preference for static linking.
+
+One single mingw64 DLL --- [`libwinpthread-1.dll`](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app) ---
+is required to run the compilers.
+
 ## Supported toolchain targets
 
-| GCC target arch (in ./configure)    | Version       | C-Library     | libbfd          | Build Time mingw64  |
-| ----------------------------------- | ------------- | ------------- | --------------- | ------------------- |
-| `arm-none-eabi-gcc`                 | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 12h                 |
-| `avr-gcc`                           | 11.2.0        | avr-libc3     | binutils 2.37   | 2h                  |
-| `rl78-unknown-elf-gcc`              | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2h                  |
-| `rx-elf-gcc`                        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 6h                  |
-| `v850-unknown-elf-gcc`              | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   | ?                   |
-| `x86_64-x64-mingw32-gcc`            | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   | ?                   |
+| GCC target arch (in `./configure`)    | Version       | C-Library     | libbfd          | Build Time mingw64  |
+| ------------------------------------- | ------------- | ------------- | --------------- | ------------------- |
+| `arm-none-eabi-gcc`                   | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 12h                 |
+| `avr-gcc`                             | 11.2.0        | avr-libc3     | binutils 2.37   | 2h                  |
+| `rl78-unknown-elf-gcc`                | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2h                  |
+| `rx-elf-gcc`                          | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 6h                  |
+| `v850-unknown-elf-gcc`                | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   | ?                   |
+| `x86_64-x64-mingw32-gcc`              | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   | ?                   |
 
 ## Build details
-
-All builds performed on [mingw64/msys2](https://www.msys2.org)
-with `--host=x86_64-x64-mingw32` with preference for static linking.
 
 The following packages and prerequisites have been used.
 Each package and prerequisite has been built on `--host=x86_64-x64-mingw32`
@@ -88,7 +91,8 @@ on msys2/Mingw64 are provided in the [notes](./notes) directory.
 
 ## Sources and Patches
 
-TBD: Provide links to sources patch files for libiconv, gmp, mpfr, mpc, isl, cloog, binutils, libiconv, avr-libc3, etc.
+TBD: Provide links to source archive(s) and patch files for
+libiconv, gmp, mpfr, mpc, isl, cloog, binutils, libiconv, avr-libc3, etc.
 
 TBD: Create patch files for binutils, libiconv, avr-libc3, etc.
 
