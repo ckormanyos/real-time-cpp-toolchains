@@ -7,13 +7,14 @@ These GNU/GCC toolchains are built to run on Windows(R).
 
 ## Supported toolchain targets
 
-| GCC target arch (as used in configure) | Version       | C-Library     | bfd             |
-| -------------------------------------- | ------------- | ------------- | --------------- |
-| `avr-gcc`                              | 11.2.0        | avr-libc3     | binutils 2.37   |
-| `arm-none-eabi-elf-gcc`                | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
-| `rl78-unknown-elf-gcc`                 | 11.2.0        | newlib 4.1.0  | binutils 2.37   |
-| `rx-elf-gcc`                           | 11.2.0        | newlib 4.1.0  | binutils 2.37   |
-| `v850-unknown-elf-gcc`                 | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
+| GCC target arch (in ./configure)    | Version       | C-Library     | libbfd          | Build Time mingw64  |
+| ----------------------------------- | ------------- | ------------- | --------------- | ------------------- |
+| `arm-none-eabi-gcc`                 | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 12h                 |
+| `avr-gcc`                           | 11.2.0        | avr-libc3     | binutils 2.37   | 2h                  |
+| `rl78-unknown-elf-gcc`              | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2h                  |
+| `rx-elf-gcc`                        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 6h                  |
+| `v850-unknown-elf-gcc`              | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   | ?                   |
+| `x86_64-x64-mingw32-gcc`            | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   | ?                   |
 
 ## Build details
 
