@@ -12,7 +12,7 @@ These GNU/GCC toolchains are built to run on Windows(R).
 | `avr-gcc`                              | 11.2.0        | avr-libc3     | binutils 2.37   |
 | `arm-none-eabi-elf-gcc`                | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
 | `rl78-unknown-elf-gcc`                 | 11.2.0        | newlib 4.1.0  | binutils 2.37   |
-| `rx-elf-gcc`                           | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
+| `rx-elf-gcc`                           | 11.2.0        | newlib 4.1.0  | binutils 2.37   |
 | `v850-unknown-elf-gcc`                 | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   |
 
 ## Build details
@@ -29,18 +29,6 @@ with static linkage.
   - MPC 1.2.1 (prerequisite)
   - ISL 0.15 (prerequisite)
   - cloog 0.18.1 (package)
-
-### Configurations
-
-The build of `rl78-unknown-elf-gcc` has been configured with:
-
-```
-../gcc-11.2.0_with_newlib-4.1.0/configure --prefix=/usr/local/gcc-11.2.0-rl78-unknown-elf --target=rl78-unknown-elf --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --with-pkgversion='ckormanyos/real-time-cpp' --enable-static --disable-shared --without-system-zlib --with-newlib --disable-libgomp --disable-libada --disable-libssp --disable-__cxa_atexit --disable-threads --disable-nls --disable-win32-registry --disable-sjlj-exceptions --with-dwarf2 --disable-libquadmath --disable-fixed-point --disable-decimal-float --with-isl=/usr/local/isl-0.15 --with-cloog=/usr/local/cloog-0.18.1 --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0 --with-mpc=/usr/local/mpc-1.2.1 --with-libiconv-prefix=/usr/local/libiconv-1.16
-```
-
-### Patches
-
-TBD: Create patch files for binutils, libiconv, avr-libc3, etc.
 
 # Finding/Extracting the GNU/GCC Toolchains
 
@@ -89,3 +77,17 @@ The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github
   - Step 1. Extract one or more of the GNU/GCC toolchains in [ref_app/tools/Util/MinGW/msys/1.0/local](./ref_app/tools/Util/MinGW/msys/1.0/local) directory. The executable files are self-extracting archives that extract in-place where they are intended to be, such as via double-click.
   - Step 2. Following toolchain extraction(s), move or copy the [ref_app/tools](./ref_app/tools) directory to the corresponding location in the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository clone.
   - Open the `ref_app.sln` VisualStudio(R) solution as shown [here](./images/real-time-cpp-target-avr-build.jpg), select the solution configuration `target avr` and rebuild it. The results are placed in the temporary `ref_app/bin` directory.
+
+# Building a GCC cross toolchain on msys2/mingw64
+
+## Notes
+
+Full notes and instructionis on building various GCC cross toolchains
+on msys2/Mingw64 are provided in the [notes](./notes) directory.
+
+## Sources and Patches
+
+TBD: Provide links to sources patch files for libiconv, gmp, mpfr, mpc, isl, cloog, binutils, libiconv, avr-libc3, etc.
+
+TBD: Create patch files for binutils, libiconv, avr-libc3, etc.
+

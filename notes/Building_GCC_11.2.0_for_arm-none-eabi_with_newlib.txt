@@ -1,0 +1,127 @@
+------------------------------------------------------
+
+Build GCC 11.2.0 for arm-none-eabi on x86_64-x64-mingw32
+
+------------------------------------------------------
+
+GET/INSTALL x86_64-x64-mingw32.
+
+I found the instructions to be quite helpful at the msys2
+  * website itself (https://www.msys2.org/).
+  * Simply install msys2 with the installer. Then get/install
+  * the base-development packages as per instructions via
+  *   $ pacman -S --needed base-devel mingw-w64-x86_64-toolchain
+  * While building binutils/GCC/etc., temporarily (or permanently)
+    rename certain dll linkage files. These include:
+      D:\msys64\mingw64\x86_64-x64-mingw32\lib\libwinpthread.dll.a
+      D:\msys64\mingw64\lib\libz.dll.a
+      D:\msys64\mingw64\lib\libzstd.dll.a
+
+------------------------------------------------------
+
+Helpful NOTES on some TOOL LOCATIONS.
+
+Get ISL here:
+  * ftp://gcc.gnu.org/pub/gcc/infrastructure/
+    (and open link in Windows Explorer)
+
+Get binutils here:
+  * https://mirrors.tripadvisor.com/gnu/binutils/
+
+Get Newlib here:
+  * ftp://sourceware.org/pub/newlib/
+    (and open link in Windows Explorer)
+
+Get GCC here:
+  * https://gcc.gnu.org/releases.html
+    which leads us to, for instance here:
+    ftp://ftp.fu-berlin.de/unix/languages/gcc/
+    (and open link in Windows Explorer)
+
+Get libiconv here:
+  * https://gnu.freemirror.org/gnu/libiconv/
+
+------------------------------------------------------
+
+NOTES on some BUILD/INSTALL PREREQUISITE(S)
+
+Let's first build and install the necessary prerequisites.
+
+Build libiconv 1.16
+  * tar -xf libiconv-1.16.tar.gz
+  * mkdir objdir-libiconv-1.16
+  * cd objdir-libiconv-1.16
+  * ../libiconv-1.16/configure --prefix=/usr/local/libiconv-1.16 --build=x86_64-x64-mingw32 --target=x86_64-x64-mingw32 --host=x86_64-x64-mingw32 --enable-static --disable-shared
+  * I needed to patch srclib/strerror-overrride.c regarding some undefined
+    networking constants having integral values equal to 995, 996, 997.
+
+Build GMP 6.2.1
+  * tar -xf gmp-6.2.1.tar.xz
+  * mkdir objdir-gmp-6.2.1
+  * cd objdir-gmp-6.2.1
+  * ../gmp-6.2.1/configure --prefix=/usr/local/gmp-6.2.1 --build=x86_64-x64-mingw32 --target=x86_64-x64-mingw32 --host=x86_64-x64-mingw32 --enable-static --disable-shared
+
+Build MPFR 4.1
+  * tar -xjf mpfr-4.1.0.tar.bz2
+  * mkdir objdir-mpfr-4.1.0
+  * cd objdir-mpfr-4.1.0
+  * ../mpfr-4.1.0/configure --prefix=/usr/local/mpfr-4.1.0 --build=x86_64-x64-mingw32 --target=x86_64-x64-mingw32 --host=x86_64-x64-mingw32 --enable-static --disable-shared --with-gmp=/usr/local/gmp-6.2.1
+
+Build MPC 1.2.1
+  * tar -xf mpc-1.2.1.tar.gz
+  * mkdir objdir-mpc-1.2.1
+  * cd objdir-mpc-1.2.1
+  * ../mpc-1.2.1/configure --prefix=/usr/local/mpc-1.2.1 --build=x86_64-x64-mingw32 --target=x86_64-x64-mingw32 --host=x86_64-x64-mingw32 --enable-static --disable-shared --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0
+
+Build isl 0.15
+  * tar -xjf isl-0.15.tar.bz2
+  * mkdir objdir-isl-0.15
+  * cd objdir-isl-0.15
+  * ../isl-0.15/configure --prefix=/usr/local/isl-0.15 --build=x86_64-x64-mingw32 --target=x86_64-x64-mingw32 --host=x86_64-x64-mingw32 --enable-static --disable-shared --with-gmp=/usr/local/gmp-6.2.1
+
+Build cloog 0.18.1
+  * tar -xf cloog-0.18.1.tar.gz
+  * mkdir objdir-cloog-0.18.1
+  * cd objdir-cloog-0.18.1
+  * ../cloog-0.18.1/configure --prefix=/usr/local/cloog-0.18.1 --build=x86_64-x64-mingw32 --target=x86_64-x64-mingw32 --host=x86_64-x64-mingw32 --enable-static --disable-shared --with-isl=/usr/local/isl-0.15 --with-gmp=/usr/local/gmp-6.2.1
+
+------------------------------------------------------
+
+NOTES on BUILD/INSTALL binutils
+
+Let's build and install binutils 2.37 for arm-none-eabi
+
+NOTE on libiconv:
+  * Optionally build with: --with-libiconv-prefix=/usr/local/libiconv-1.16
+
+Build binutils 2.37 for arm-none-eabi
+  * tar -xjf binutils-2.37.tar.bz2
+  * mkdir objdir-binutils-2.37-arm-none-eabi-gcc-11.2.0
+  * cd objdir-binutils-2.37-arm-none-eabi-gcc-11.2.0
+  * ../binutils-2.37/configure --build=x86_64-x64-mingw32 --host=x86_64-x64-mingw32 --target=arm-none-eabi --prefix=/usr/local/gcc-11.2.0-arm-none-eabi --disable-werror --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libada --disable-libstdcxx-pch --disable-nls --disable-shared --enable-static --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-pkgversion='ckormanyos/real-time-cpp' --with-multilib-list=rmprofile,aprofile --with-isl=/usr/local/isl-0.15 --with-cloog=/usr/local/cloog-0.18.1 --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0 --with-mpc=/usr/local/mpc-1.2.1 --with-libiconv-prefix=/usr/local/libiconv-1.16
+  * make --jobs=6 all
+  * make install
+
+------------------------------------------------------
+
+NOTES on BUILD/INSTALL GCC for rl78-unknown-elf
+
+Let's build and install gcc-11.2.0 for arm-none-eabi
+
+NOTE on libiconv:
+  * Optionally build with: --with-libiconv-prefix=/usr/local/libiconv-1.16
+
+Build GCC 11.2.0 for arm-none-eabi
+  * tar -xf gcc-11.2.0.tar.gz
+  * tar -xf newlib-4.1.0.tar.gz
+  *
+  * cd newlib-4.1.0
+  * cp -r newlib libgloss ../gcc-11.2.0_with_newlib-4.1.0
+  * cd ..
+  *
+  * mkdir objdir-gcc-11.2.0-arm-none-eabi
+  * cd objdir-gcc-11.2.0-arm-none-eabi
+  * ../gcc-11.2.0_with_newlib-4.1.0/configure --build=x86_64-x64-mingw32 --host=x86_64-x64-mingw32 --target=arm-none-eabi --prefix=/usr/local/gcc-11.2.0-arm-none-eabi --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libada --disable-libstdcxx-pch --disable-nls --disable-shared --enable-static --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-pkgversion='ckormanyos/real-time-cpp' --with-multilib-list=rmprofile,aprofile --with-isl=/usr/local/isl-0.15 --with-cloog=/usr/local/cloog-0.18.1 --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0 --with-mpc=/usr/local/mpc-1.2.1 --with-libiconv-prefix=/usr/local/libiconv-1.16
+  *
+  * make --jobs=6 all
+  * make install
