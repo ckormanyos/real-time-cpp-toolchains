@@ -1,4 +1,4 @@
-# GNU/GCC Toolchains for real-time-cpp on Windows
+# GNU/GCC Toolchains for [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) on Windows
 
 This repository is intended to store GNU/GCC toolchains needed
 for building `ref_app` targets for the repository
@@ -12,7 +12,7 @@ One single mingw64 DLL --- [`libwinpthread-1.dll`](https://github.com/ckormanyos
 is required to run the compilers. (See [this issue](https://github.com/ckormanyos/real-time-cpp-toolchains/issues/2)
 for tracking the attempt to remove this remaining dependency.)
 
-## Supported toolchain targets
+## Supported Toolchain Targets
 
 | GCC target arch (in `./configure`)    | Version       | C-Library     | libbfd          | Build Time mingw64  |
 | ------------------------------------- | ------------- | ------------- | --------------- | ------------------- |
