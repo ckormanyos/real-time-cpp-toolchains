@@ -1,5 +1,7 @@
 # GNU/GCC Toolchains for [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) on Windows
 
+This repository is work in progress.
+
 This repository is intended to store GNU/GCC toolchains needed
 for building `ref_app` targets for the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
