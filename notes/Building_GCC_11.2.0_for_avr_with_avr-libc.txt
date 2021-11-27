@@ -102,7 +102,7 @@ Build binutils 2.37 for avr
     TBD: Make a patch/diff for the trivial two-line uint changes mentioned below.
   * mkdir objdir-binutils-2.37-avr-gcc-11.2.0
   * cd objdir-binutils-2.37-avr-gcc-11.2.0
-  * ../binutils-2.37/configure --prefix=/usr/local/gcc-11.2.0-avr --target=avr --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --disable-werror --disable-shared --enable-static --disable-libada --disable-libssp --disable-nls --enable-mingw-wildcard --with-gnu-as --with-dwarf2 --with-isl=/usr/local/isl-0.15 --with-cloog=/usr/local/cloog-0.18.1 --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0 --with-mpc=/usr/local/mpc-1.2.1 --with-libiconv-prefix=/usr/local/libiconv-1.16
+  * ../binutils-2.37/configure --prefix=/usr/local/gcc-11.2.0-avr --target=avr --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --disable-werror --with-pkgversion='Built by ckormanyos/real-time-cpp' --disable-shared --enable-static --disable-libada --disable-libssp --disable-nls --enable-mingw-wildcard --with-gnu-as --with-dwarf2 --with-isl=/usr/local/isl-0.15 --with-cloog=/usr/local/cloog-0.18.1 --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0 --with-mpc=/usr/local/mpc-1.2.1 --with-libiconv-prefix=/usr/local/libiconv-1.16
 
   * make --jobs=6 all
   * make install
@@ -125,7 +125,7 @@ Build GCC 11.2.0 for avr
   *
   * mkdir objdir-gcc-11.2.0-avr
   * cd objdir-gcc-11.2.0-avr
-  * ../gcc-11.2.0/configure --prefix=/usr/local/gcc-11.2.0-avr --target=avr --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --disable-shared --enable-static --disable-libada --disable-libssp --disable-nls --enable-mingw-wildcard --with-gnu-as --with-dwarf2 --with-isl=/usr/local/isl-0.15 --with-cloog=/usr/local/cloog-0.18.1 --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0 --with-mpc=/usr/local/mpc-1.2.1 --with-libiconv-prefix=/usr/local/libiconv-1.16
+  * ../gcc-11.2.0/configure --prefix=/usr/local/gcc-11.2.0-avr --target=avr --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --with-pkgversion='Built by ckormanyos/real-time-cpp' --disable-shared --enable-static --disable-libada --disable-libssp --disable-nls --enable-mingw-wildcard --with-gnu-as --with-dwarf2 --with-isl=/usr/local/isl-0.15 --with-cloog=/usr/local/cloog-0.18.1 --with-gmp=/usr/local/gmp-6.2.1 --with-mpfr=/usr/local/mpfr-4.1.0 --with-mpc=/usr/local/mpc-1.2.1 --with-libiconv-prefix=/usr/local/libiconv-1.16
 
 Build avr-libc-2.0.0
   * For this we use a pre-installed (or freshly built) avr-gcc in the path of the distro.
