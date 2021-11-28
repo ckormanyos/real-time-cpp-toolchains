@@ -12,14 +12,13 @@ on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
 ## Supported Toolchain Targets
 
-| GCC target arch (in `./configure`)    | Version       | C-Library     | libbfd          | Build Time mingw64  |
-| ------------------------------------- | ------------- | ------------- | --------------- | ------------------- |
-| `arm-none-eabi-gcc`                   | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 8h                  |
-| `avr-gcc`                             | 11.2.0        | avr-libc3     | binutils 2.37   | 2h                  |
-| `rl78-unknown-elf-gcc`                | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2h                  |
-| `rx-elf-gcc`                          | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 5h                  |
-| `v850-unknown-elf-gcc`                | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   | 5h                  |
-| `x86_64-x64-mingw32-gcc`              | 11.2.0 (TBD)  | newlib 4.1.0  | binutils 2.37   | ?                   |
+| GCC target arch (in `./configure`)    | Version   | C-Library     | libbfd          | Build Time mingw64  |
+| ------------------------------------- | --------- | ------------- | --------------- | ------------------- |
+| `arm-none-eabi-gcc`                   | 11.2.0    | newlib 4.1.0  | binutils 2.37   | 8h                  |
+| `avr-gcc`                             | 11.2.0    | avr-libc3     | binutils 2.37   | 2h                  |
+| `rl78-unknown-elf-gcc`                | 11.2.0    | newlib 4.1.0  | binutils 2.37   | 2h                  |
+| `rx-elf-gcc`                          | 11.2.0    | newlib 4.1.0  | binutils 2.37   | 5h                  |
+| `v850-unknown-elf-gcc`                | 11.2.0    | newlib 4.1.0  | binutils 2.37   | 4h                  |
 
 ## Build details
 
@@ -88,7 +87,10 @@ The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github
   - Clone the [real-time-cpp-toolchains](https://github.com/ckormanyos/real-time-cpp-toolchains) repository, which is this repository.
   - Step 1. Extract one or more of the GNU/GCC toolchains in [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory. The executable files are self-extracting archives that extract in-place where they are intended to be, such as via double-click.
   - Step 2. Following toolchain extraction(s), move or copy the [ref_app/tools](./ref_app/tools) directory to the corresponding location in the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository clone.
-  - Open the `ref_app.sln` VisualStudio(R) solution as shown [here](./images/real-time-cpp-target-avr-build.jpg), select the solution configuration `target avr` and rebuild it. The results are placed in the temporary `ref_app/bin` directory.
+  - Open the `ref_app.sln` VisualStudio(R) solution as shown below.
+  - Select the solution configuration `target avr` and rebuild it. The results are placed in the temporary `ref_app/bin` directory
+
+![](./images/real-time-cpp-target-avr-build.jpg)
 
 # Building a GCC Cross Toolchain on msys2/mingw64
 
@@ -99,7 +101,8 @@ on msys2/Mingw64 are provided in the [notes](./notes) directory.
 
 ## Sources and Patches
 
-TBD: Provide links to source archive(s) and patch files for
+TBD: Provide links to source archive(s)
+and also provide any used patch files for
 libiconv, gmp, mpfr, mpc, isl, cloog, binutils, libiconv, avr-libc3, etc.
 
 TBD: Create patch files for binutils, libiconv, avr-libc3, etc.
