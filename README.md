@@ -5,7 +5,10 @@ This repository is work in progress.
 This repository is intended to store GNU/GCC toolchains needed
 for building `ref_app` targets for the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
-These GNU/GCC toolchains are built to run on Windows(R).
+
+These GNU/GCC toolchains are built to run on Windows(R)
+and can be used by developers who optionally run the builds
+on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
 ## Supported Toolchain Targets
 
