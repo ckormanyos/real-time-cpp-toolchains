@@ -43,6 +43,14 @@ GNU/GCC toolchains are stored as self-extracting archives in the
 [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local)
 directory.
 
+The JPG image below
+depicts the topology of the GNU/GCC toolchains in the
+[real-time-cpp-toolchains](https://github.com/ckormanyos/real-time-cpp-toolchains)
+repository and how these topologically harmonize with the `ref_app`
+in the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository.
+
+![JPG image](./images/real-time-cpp-toolchains.jpg)
+
 Consider, for instance, the `gcc-avr` toolchain version 11.2.0.
 It is stored in the executable file `gcc-11.2.0-avr.exe`.
 This file has been split into several self-extracting
@@ -70,13 +78,7 @@ This creates the directory `ref_app\tools` which subsequently
 enables the MSVC GNU/GCC target builds to work out-of-the-box in `ref_app.sln`,
 when opened in Microsoft(R) VisualStudio(R).
 
-# Using GNU/GCC Toolchains with the `ref_app` VS Solution
-
-The following [JPG image](./images/real-time-cpp-toolchains.jpg)
-depicts the topology of the GNU/GCC toolchains in the
-[real-time-cpp-toolchains](https://github.com/ckormanyos/real-time-cpp-toolchains)
-repository and how these topologically harmonize with the `ref_app`
-in the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository.
+# Using GNU/GCC Toolchains in the `ref_app` VS Solution
 
 The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository.
   - Clone the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository, which is the main companion code for the book.
