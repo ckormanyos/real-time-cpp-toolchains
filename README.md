@@ -12,14 +12,13 @@ on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
 ## Supported Toolchain Targets
 
-| GCC target architecture    | GCC version   | C-Library     | libbfd version  | Build time on `mingw64` |
-| (in `./configure`)         |               |               |                 | (in hours)              |
-| -------------------------- | ------------- | ------------- | --------------- | ----------------------- |
-| `arm-none-eabi-gcc`        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 8                       |
-| `avr-gcc`                  | 11.2.0        | avr-libc3     | binutils 2.37   | 2                       |
-| `rl78-unknown-elf-gcc`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2                       |
-| `rx-elf-gcc`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 5                       |
-| `v850-unknown-elf-gcc`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 4                       |
+| GCC target                 | GCC version   | C-Library     | libbfd version  | Build hours on `mingw64` |
+| -------------------------- | ------------- | ------------- | --------------- | ------------------------ |
+| `arm-none-eabi-gcc`        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 8                        |
+| `avr-gcc`                  | 11.2.0        | avr-libc3     | binutils 2.37   | 2                        |
+| `rl78-unknown-elf-gcc`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2                        |
+| `rx-elf-gcc`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 5                        |
+| `v850-unknown-elf-gcc`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 4                        |
 
 ## Build details
 
