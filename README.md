@@ -84,8 +84,8 @@ when opened in Microsoft(R) VisualStudio(R).
 # Using GNU/GCC Toolchains in the `ref_app` VS Solution
 
 The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository.
-  - Clone the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository, which is the main companion code for the book.
-  - Clone the [real-time-cpp-toolchains](https://github.com/ckormanyos/real-time-cpp-toolchains) repository, which is this repository.
+  - Clone (or get zip of) the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository, which is the main companion code for the book.
+  - Clone (or get zip of) the [real-time-cpp-toolchains](https://github.com/ckormanyos/real-time-cpp-toolchains) repository, which is this repository.
   - Step 1. Extract one or more of the GNU/GCC toolchains in [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory. The executable files are self-extracting archives that extract in-place where they are intended to be, such as via double-click.
   - Step 2. Following toolchain extraction(s), move or copy the [ref_app/tools](./ref_app/tools) directory to the corresponding location in the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository clone.
   - Open the `ref_app.sln` VisualStudio(R) solution as shown below.
