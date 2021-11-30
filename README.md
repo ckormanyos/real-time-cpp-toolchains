@@ -12,13 +12,13 @@ on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
 ## Supported Toolchain Targets
 
-| GCC target             | GCC version   | C-Library     | libbfd version  | Build hours on `mingw64` |
-| ---------------------- | ------------- | ------------- | --------------- | ------------------------ |
-| `arm-none-eabi`        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 8                        |
-| `avr`                  | 11.2.0        | avr-libc3     | binutils 2.37   | 2                        |
-| `rl78-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2                        |
-| `rx-elf`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 5                        |
-| `v850-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 4                        |
+| GCC target             | GCC version   | C-Library     | libbfd version  | Build hours `mingw64` |
+| ---------------------- | ------------- | ------------- | --------------- | --------------------- |
+| `arm-none-eabi`        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 8                     |
+| `avr`                  | 11.2.0        | avr-libc3     | binutils 2.37   | 2                     |
+| `rl78-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2                     |
+| `rx-elf`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 5                     |
+| `v850-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 4                     |
 
 ## Build details
 
