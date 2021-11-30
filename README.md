@@ -23,22 +23,23 @@ on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
 ## Build details
 
-All builds have been performed on [mingw64/msys2](https://www.msys2.org)
-with `--host=x86_64-x64-mingw32`. Builds have preference for static linking.
-
-One single mingw64 DLL --- [`libwinpthread-1.dll`](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app) ---
-is required to run the compilers. (See [this issue](https://github.com/ckormanyos/real-time-cpp-toolchains/issues/2)
-for tracking the attempt to remove this remaining dependency.)
+All GCC builds (including binutils and prerequisites) have been performed
+on [mingw64/msys2](https://www.msys2.org) with `--host=x86_64-x64-mingw32`.
 
 The following packages and prerequisites have been used.
 Each package and prerequisite has been built on `--host=x86_64-x64-mingw32`
-(favoring static linkage).
+(favoring static linkage using flags `--disable-shared` and `--enable-static`).
   - libiconv 1.16 (package)
   - GMP 6.2.1 (prerequisite)
   - MPFR 4.1 (prerequisite)
   - MPC 1.2.1 (prerequisite)
   - ISL 0.15 (prerequisite)
   - cloog 0.18.1 (package)
+
+One single mingw64 DLL --- [`libwinpthread-1.dll`](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app) ---
+is required to run the compilers once they have been built.
+(See [this issue](https://github.com/ckormanyos/real-time-cpp-toolchains/issues/2)
+for tracking the attempt to remove this remaining dependency.)
 
 # Finding/Extracting the GNU/GCC Toolchains
 
