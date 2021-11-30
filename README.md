@@ -12,13 +12,14 @@ on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
 ## Supported Toolchain Targets
 
-| GCC target arch (in `./configure`)    | Version   | C-Library     | libbfd          | Build Time mingw64  |
-| ------------------------------------- | --------- | ------------- | --------------- | ------------------- |
-| `arm-none-eabi-gcc`                   | 11.2.0    | newlib 4.1.0  | binutils 2.37   | 8h                  |
-| `avr-gcc`                             | 11.2.0    | avr-libc3     | binutils 2.37   | 2h                  |
-| `rl78-unknown-elf-gcc`                | 11.2.0    | newlib 4.1.0  | binutils 2.37   | 2h                  |
-| `rx-elf-gcc`                          | 11.2.0    | newlib 4.1.0  | binutils 2.37   | 5h                  |
-| `v850-unknown-elf-gcc`                | 11.2.0    | newlib 4.1.0  | binutils 2.37   | 4h                  |
+| GCC target architecture    | GCC version   | C-Library     | libbfd version  | Build time on `mingw64` |
+| (in `./configure`)         |               |               |                 | (in hours)              |
+| -------------------------- | ------------- | ------------- | --------------- | ----------------------- |
+| `arm-none-eabi-gcc`        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 8                       |
+| `avr-gcc`                  | 11.2.0        | avr-libc3     | binutils 2.37   | 2                       |
+| `rl78-unknown-elf-gcc`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2                       |
+| `rx-elf-gcc`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 5                       |
+| `v850-unknown-elf-gcc`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 4                       |
 
 ## Build details
 
@@ -97,7 +98,7 @@ The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github
 ## Notes
 
 Full notes and instructionis on building various GCC cross toolchains
-on msys2/Mingw64 are provided in the [notes](./notes) directory.
+on `msys2`/`mingw64` are provided in the [notes](./notes) directory.
 
 ## Sources and Patches
 
@@ -105,5 +106,4 @@ TBD: Provide links to source archive(s)
 and also provide any used patch files for
 libiconv, gmp, mpfr, mpc, isl, cloog, binutils, libiconv, avr-libc3, etc.
 
-TBD: Create patch files for binutils, libiconv, avr-libc3, etc.
-
+TBD: Create and publish patch files for binutils, libiconv, avr-libc3, etc.
