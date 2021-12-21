@@ -23,10 +23,10 @@ on `Win*` batches or in Microsoft(R) VisualStudio(R).
 ## Build details
 
 All GCC builds (including binutils and prerequisites) have been performed
-on [mingw64/msys2](https://www.msys2.org) with `--host=x86_64-x64-mingw32`.
+on [mingw64/msys2](https://www.msys2.org) with `--host=x86_64-w64-mingw32`.
 
 The following packages and prerequisites have been used.
-Each package and prerequisite has been built on `--host=x86_64-x64-mingw32`
+Each package and prerequisite has been built on `--host=x86_64-w64-mingw32`
 (favoring static linkage using flags `--disable-shared` and `--enable-static`).
   - libiconv 1.16 (package)
   - GMP 6.2.1 (prerequisite)
