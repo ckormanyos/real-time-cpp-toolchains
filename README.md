@@ -12,9 +12,9 @@ repository on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
 Other standalone uses are, of course, possible with these toolchains.
 They are completely moveable and built to run out-of-the-box.
-Do note, however, that the dynamic link library `libwinpthread.dll`
+Do note, however, that the dynamic link library `libwinpthread-1.dll`
 is required for running these GCC ports.
-A copy of `libwinpthread.dll` can be found
+A copy of `libwinpthread-1.dll` can be found
 [here](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app).
 
 ## Supported Toolchain Targets
