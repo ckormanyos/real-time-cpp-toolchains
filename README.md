@@ -1,14 +1,20 @@
 # GNU/GCC Toolchains for [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) on Windows
 
-This repository is work in progress.
-
-This repository is intended to store GNU/GCC toolchains needed
+This stores GNU/GCC toolchains needed
 for building `ref_app` targets for the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 
-These GNU/GCC toolchains are built to run on Windows(R)
-and can be used by developers who optionally run the builds
-on `Win*` batches or in Microsoft(R) VisualStudio(R).
+These GNU/GCC toolchains are built to run on Windows(R).
+They are intended to be used by developers who optionally
+run the builds in the
+[real-time-cpp](https://github.com/ckormanyos/real-time-cpp)
+repository on `Win*` batches or in Microsoft(R) VisualStudio(R).
+
+Other standalone uses are, of course, possible with these toolchains,
+as they are completely moveable and built to run out-of-the-box.
+Do note, however, that the dynamic link library `libwinpthread.dll` as found
+[here](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app)
+is required for running these GCC ports.
 
 ## Supported Toolchain Targets
 
