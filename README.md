@@ -4,6 +4,12 @@ This repository stores GNU/GCC toolchains needed
 for building `ref_app` targets found in the repository
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 
+## If you just want the toolchains
+
+If you simply want the GNU/GCC toolchains and have your own specialized use for them, they can be found in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
+
+## Further details
+
 These GNU/GCC toolchains are built to run on Windows(R).
 They are intended to be used by developers who optionally
 run the builds in the
@@ -27,10 +33,6 @@ A copy of `libwinpthread-1.dll` can be found
 | `rx-elf`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 5                     |
 | `v850-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 4                     |
 | `x86_64-w64-mingw32`   | 11.2.0        |               |                 | Use [nuwen distro](https://nuwen.net/mingw.html) |
-
-## If you just want the toolchains
-
-If you simply want the GNU/GCC toolchains and have your own specialized use for them, they can be found in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
 
 ## Build details
 
