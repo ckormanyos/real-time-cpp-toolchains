@@ -30,7 +30,7 @@ A copy of `libwinpthread-1.dll` can be found
 
 ## If you just want the toolchains
 
-If you simply want the GNU/GCC toolchains, they can be found in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
+If you simply want the GNU/GCC toolchains and have your own specialized use for them, they can be found in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
 
 ## Build details
 
