@@ -28,6 +28,10 @@ A copy of `libwinpthread-1.dll` can be found
 | `v850-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 4                     |
 | `x86_64-w64-mingw32`   | 11.2.0        |               |                 | Use [nuwen distro](https://nuwen.net/mingw.html) |
 
+## If you just want the toolchains
+
+If you simply want the GNU/GCC toolchains, they can be found in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
+
 ## Build details
 
 All GCC builds (including binutils and prerequisites) have been performed
