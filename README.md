@@ -6,7 +6,7 @@ for building `ref_app` targets found in the repository
 
 ## If you just want the toolchains
 
-If you simply want any of the GNU/GCC toolchains for specialized use, they can be found in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
+If you simply want to get any/all of the GNU/GCC toolchains for your own use, they can be found as multi-file, self-extracting archives in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
 
 ## Further details
 
