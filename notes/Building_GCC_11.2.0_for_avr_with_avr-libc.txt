@@ -150,3 +150,8 @@ Build avr-libc-2.0.0
   * mkdir objdir-avr-libc-2.0.0
   * cd objdir-avr-libc-2.0.0
   * ../avr-libc-2.0.0/configure --prefix=/usr/local/gcc-11.2.0-avr --build=x86_64-w64-mingw32 --host=avr
+
+Notes regarding potentially broken libdep.a
+  * Evidently, if you try to run "ar" in a command prompt, then the files in /mingw64/lib/bfd-plugins are loaded as DLLs. So if something that is not a DLL is present in that directory, it will fail with an error message.
+  * removing /mingw64/lib/bfd-plugins/libdep.a solves this problem.
+
