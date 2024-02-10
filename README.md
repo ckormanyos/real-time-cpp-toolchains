@@ -28,15 +28,15 @@ They are completely moveable and built to run out-of-the-box.
 
 ## Supported Toolchain Targets
 
-| GCC target             | GCC version   | C-Library     | libbfd version  | location              |
-| ---------------------- | ------------- | ------------- | --------------- | --------------------- |
-| `arm-none-eabi`        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
-| `avr`                  | 13.2.0        | avr-libc      | binutils 2.41   | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
-| `rl78-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
-| `rx-elf`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
-| `v850-unknown-elf`     | 13.2.0        | newlib 4.4.0  | binutils 2.41   | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
-| `x86_64-w64-mingw32`   | 13.2.0        | newlib 4.4.0  | binutils 2.41   | [nuwen distro](https://nuwen.net/mingw.html) |
-| `xtensa-esp32-elf`     | 13.2.0        |               |                 | [espressif/crosstool-NG](https://github.com/espressif/crosstool-NG) |
+| GCC target             | GCC version   | location              |
+| ---------------------- | ------------- | --------------------- |
+| `arm-none-eabi`        | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
+| `avr`                  | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
+| `rl78-unknown-elf`     | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
+| `rx-elf`               | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
+| `v850-unknown-elf`     | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
+| `x86_64-w64-mingw32`   | 13.2.0        | [nuwen distro](https://nuwen.net/mingw.html) |
+| `xtensa-esp32-elf`     | 13.2.0        | [espressif/crosstool-NG](https://github.com/espressif/crosstool-NG) |
 
 
 ## Build details
@@ -103,11 +103,3 @@ The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github
 
 Full notes and instructionis on building various GCC cross toolchains
 on `msys2`/`mingw64` are provided in the [notes](./notes) directory.
-
-## Sources and Patches
-
-TBD: Provide links to source archive(s)
-and also provide any used patch files for
-libiconv, gmp, mpfr, mpc, isl, cloog, binutils, libiconv, avr-libc3, etc.
-
-TBD: Create and publish patch files for binutils, libiconv, avr-libc3, etc.
