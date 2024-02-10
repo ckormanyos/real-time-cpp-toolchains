@@ -1,7 +1,7 @@
 real-time-cpp-toolchains
 ==================
 
->ANNOUNCEMENT: This toolchain collection is in the process of being distributed to other specific, dedicated repos.
+>ANNOUNCEMENT: This toolchain collection currently being distributed to specific, dedicated repos.
 
 # GNU/GCC Toolchains for [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) on Windows
 
@@ -11,7 +11,9 @@ for building `ref_app` targets found in the repository
 
 ## If you just want the toolchains
 
-If you simply want to get any/all of the GNU/GCC toolchains for your own use, they can be found as multi-file, self-extracting archives in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
+If you simply want to get any/all of the GNU/GCC toolchains for your own use, they can be found
+either as linked alternate locations or as multi-file, self-extracting archives
+in the [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local) directory.
 
 ## Further details
 
@@ -23,10 +25,6 @@ repository on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
 Other standalone uses are, of course, possible with these toolchains.
 They are completely moveable and built to run out-of-the-box.
-Do note, however, that the dynamic link library `libwinpthread-1.dll`
-is required for running these GCC ports.
-A copy of `libwinpthread-1.dll` can be found
-[here](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app).
 
 ## Supported Toolchain Targets
 
@@ -38,26 +36,13 @@ A copy of `libwinpthread-1.dll` can be found
 | `rx-elf`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
 | `v850-unknown-elf`     | 13.2.0        | newlib 4.4.0  | binutils 2.41   | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
 | `x86_64-w64-mingw32`   | 13.2.0        | newlib 4.4.0  | binutils 2.41   | [nuwen distro](https://nuwen.net/mingw.html) |
+| `xtensa-esp32-elf`     | 13.2.0        |               |                 | [espressif/crosstool-NG](https://github.com/espressif/crosstool-NG) |
+
 
 ## Build details
 
 All GCC builds (including binutils and prerequisites) have been performed
 on [mingw64/msys2](https://www.msys2.org) with `--host=x86_64-w64-mingw32`.
-
-The following packages and prerequisites have been used.
-Each package and prerequisite has been built on `--host=x86_64-w64-mingw32`
-(favoring static linkage using flags `--disable-shared` and `--enable-static`).
-  - libiconv 1.16 (package)
-  - GMP 6.2.1 (prerequisite)
-  - MPFR 4.1 (prerequisite)
-  - MPC 1.2.1 (prerequisite)
-  - ISL 0.15 (prerequisite)
-  - cloog 0.18.1 (package)
-
-One single mingw64 DLL --- [`libwinpthread-1.dll`](https://github.com/ckormanyos/real-time-cpp-toolchains/tree/master/ref_app) ---
-is required to run the compilers once they have been built.
-(See [this issue](https://github.com/ckormanyos/real-time-cpp-toolchains/issues/2)
-for tracking the attempt to remove this remaining dependency.)
 
 # Finding/Extracting the GNU/GCC Toolchains
 
