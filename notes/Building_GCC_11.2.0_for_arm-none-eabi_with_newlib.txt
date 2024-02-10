@@ -106,7 +106,7 @@ Build binutils 2.37 for arm-none-eabi
 
 ------------------------------------------------------
 
-NOTES on BUILD/INSTALL GCC for rl78-unknown-elf
+NOTES on BUILD/INSTALL GCC for arm-none-eabi
 
 Let's build and install gcc-11.2.0 for arm-none-eabi
 
