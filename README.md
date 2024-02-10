@@ -1,3 +1,5 @@
+>ANNOUNCEMENT: This toolchain collection is in the process of being distributed to other specific, dedicated repos.
+
 # GNU/GCC Toolchains for [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) on Windows
 
 This repository stores GNU/GCC toolchains needed
@@ -25,14 +27,14 @@ A copy of `libwinpthread-1.dll` can be found
 
 ## Supported Toolchain Targets
 
-| GCC target             | GCC version   | C-Library     | libbfd version  | Build hours `mingw64` |
+| GCC target             | GCC version   | C-Library     | libbfd version  | location              |
 | ---------------------- | ------------- | ------------- | --------------- | --------------------- |
-| `arm-none-eabi`        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 8                     |
-| `avr`                  | 11.2.0        | avr-libc3     | binutils 2.37   | 2                     |
-| `rl78-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 2                     |
-| `rx-elf`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 5                     |
-| `v850-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | 4                     |
-| `x86_64-w64-mingw32`   | 11.2.0        |               |                 | Use [nuwen distro](https://nuwen.net/mingw.html) |
+| `arm-none-eabi`        | 11.2.0        | newlib 4.1.0  | binutils 2.37   | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
+| `avr`                  | 13.2.0        | avr-libc      | binutils 2.41   | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
+| `rl78-unknown-elf`     | 11.2.0        | newlib 4.1.0  | binutils 2.37   | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
+| `rx-elf`               | 11.2.0        | newlib 4.1.0  | binutils 2.37   | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
+| `v850-unknown-elf`     | 13.2.0        | newlib 4.4.0  | binutils 2.41   | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
+| `x86_64-w64-mingw32`   | 13.2.0        | newlib 4.4.0  | binutils 2.41   | [nuwen distro](https://nuwen.net/mingw.html) |
 
 ## Build details
 
