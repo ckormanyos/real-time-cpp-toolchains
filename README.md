@@ -32,9 +32,9 @@ They are completely moveable and built to run out-of-the-box.
 | ---------------------- | ------------- | --------------------- |
 | `arm-none-eabi`        | 13.2.1        | [ARM(R) GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)  |
 | `avr`                  | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)                    |
-| `rl78-unknown-elf`     | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                                         |
+| `rl78-unknown-elf`     | 13.2.0        | [ckormanyos/gcc-rl78-unknown-elf](https://github.com/ckormanyos/gcc-rl78-unknown-elf)      |
 | `rx-elf`               | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                                         |
-| `v850-unknown-elf`     | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)                    |
+| `v850-unknown-elf`     | 13.2.0        | [ckormanyos/gcc-v850-unknown-elf](https://github.com/ckormanyos/gcc-v850-unknown-elf)      |
 | `x86_64-w64-mingw32`   | 13.2.0        | [nuwen distro](https://nuwen.net/mingw.html)                                               |
 | `xtensa-esp32-elf`     | 13.2.0        | [espressif/crosstool-NG](https://github.com/espressif/crosstool-NG)                        |
 
