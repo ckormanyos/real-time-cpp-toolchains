@@ -1,10 +1,10 @@
 real-time-cpp-toolchains
 ==================
 
-This repository stores provides information and links to `Win*`-ported GNU/GCC toolchains
-for building `ref_app` targets found in the repository
-[real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
-These are needed when building the `ref_app` and examples on `Win*`.
+This repository provides information and links to `Win*`-ported GNU/GCC toolchains
+synchronized with [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
+They can be used (among other purposes) for building the reference application
+(`ref_app`) for embedded targets and the examples on `Win*`.
 
 ## Supported Toolchain Targets
 
