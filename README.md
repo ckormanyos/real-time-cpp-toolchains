@@ -11,15 +11,15 @@ for building `ref_app` targets found in the repository
 
 ## Supported Toolchain Targets
 
-| GCC target             | GCC version   | location              |
-| ---------------------- | ------------- | --------------------- |
-| `arm-none-eabi`        | 13.2.1        | [ARM(R) GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)  |
-| `avr`                  | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)                    |
-| `rl78-unknown-elf`     | 13.2.0        | [ckormanyos/gcc-rl78-unknown-elf](https://github.com/ckormanyos/gcc-rl78-unknown-elf)      |
-| `rx-elf`               | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                                         |
-| `v850-unknown-elf`     | 13.2.0        | [ckormanyos/gcc-v850-unknown-elf](https://github.com/ckormanyos/gcc-v850-unknown-elf)      |
-| `x86_64-w64-mingw32`   | 13.2.0        | [nuwen distro](https://nuwen.net/mingw.html)                                               |
-| `xtensa-esp32-elf`     | 13.2.0        | [espressif/crosstool-NG](https://github.com/espressif/crosstool-NG)                        |
+| GCC target             | location              |
+| ---------------------- | --------------------- |
+| `arm-none-eabi`        | [ARM(R) GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)  |
+| `avr`                  | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)                    |
+| `rl78-unknown-elf`     | [ckormanyos/gcc-rl78-unknown-elf](https://github.com/ckormanyos/gcc-rl78-unknown-elf)      |
+| `rx-elf`               | [this repo](./ref_app/tools/Util/msys64/usr/local)                                         |
+| `v850-unknown-elf`     | [ckormanyos/gcc-v850-unknown-elf](https://github.com/ckormanyos/gcc-v850-unknown-elf)      |
+| `x86_64-w64-mingw32`   | [nuwen distro](https://nuwen.net/mingw.html)                                               |
+| `xtensa-esp32-elf`     | [espressif/crosstool-NG](https://github.com/espressif/crosstool-NG)                        |
 
 ## Further details
 

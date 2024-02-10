@@ -2,4 +2,4 @@
 ==================
 
 See also
-[nuwen distro](https://nuwen.net/mingw.html).
+[nuwen distro](https://nuwen.net/mingw.html)
