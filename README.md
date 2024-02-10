@@ -1,14 +1,10 @@
 real-time-cpp-toolchains
 ==================
 
->ANNOUNCEMENT: This toolchain collection has been delegated to dedicated toolchain-specific repos.
-
-# GNU/GCC Toolchains for [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) on Windows
-
-This repository stores links to `Win*`-ported GNU/GCC toolchains.
-These are needed for building `ref_app` targets found in the repository
-[real-time-cpp](https://github.com/ckormanyos/real-time-cpp)
-when operating on `Win*`.
+This repository stores provides information and links to `Win*`-ported GNU/GCC toolchains
+for building `ref_app` targets found in the repository
+[real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
+These are needed when building the `ref_app` and examples on `Win*`.
 
 ## Supported Toolchain Targets
 
