@@ -30,13 +30,13 @@ They are completely moveable and built to run out-of-the-box.
 
 | GCC target             | GCC version   | location              |
 | ---------------------- | ------------- | --------------------- |
-| `arm-none-eabi`        | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
-| `avr`                  | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
-| `rl78-unknown-elf`     | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
-| `rx-elf`               | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                        |
-| `v850-unknown-elf`     | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)   |
-| `x86_64-w64-mingw32`   | 13.2.0        | [nuwen distro](https://nuwen.net/mingw.html) |
-| `xtensa-esp32-elf`     | 13.2.0        | [espressif/crosstool-NG](https://github.com/espressif/crosstool-NG) |
+| `arm-none-eabi`        | 13.2.1        | [ARM(R) GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)  |
+| `avr`                  | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)                    |
+| `rl78-unknown-elf`     | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                                         |
+| `rx-elf`               | 11.2.0        | [this repo](./ref_app/tools/Util/msys64/usr/local)                                         |
+| `v850-unknown-elf`     | 13.2.0        | [ckormanyos/avr-gcc-build](https://github.com/ckormanyos/avr-gcc-build)                    |
+| `x86_64-w64-mingw32`   | 13.2.0        | [nuwen distro](https://nuwen.net/mingw.html)                                               |
+| `xtensa-esp32-elf`     | 13.2.0        | [espressif/crosstool-NG](https://github.com/espressif/crosstool-NG)                        |
 
 
 ## Build details

@@ -1,3 +1,16 @@
+Update 2024-01-31
+
+- Simply use tools from "UnxUtils" including
+  echo, mkdir, rm, sed. See also:
+  https://sourceforge.net/projects/unxutils
+
+- The make.exe stays the same as the one below.
+
+- Begin building cross-compilers on msys2
+  with a completely standalone, static MinGW
+  (from nuwen). These do not require and DLLs.
+
+-------------------------------------------------------
 
 - The source of echo, mkdir, rm, sed is mingw64/msys2.
 - Their associated DLLs msys-2.0, msys-iconv-2 and
