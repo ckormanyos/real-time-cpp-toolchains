@@ -57,7 +57,7 @@ These steps are depicted in the images below.
 
 ✅&nbsp; <strong>Move or Copy `tools`</strong>
 
-<img src="./images/move_copy_tools.jpg" alt="Move or Copy `tools`" style="border: 3px solid black" />
+<kbd><img src="./images/move_copy_tools.jpg" /></kbd>
 
 ✅&nbsp; <strong>Populate Toolchain</strong>
 
