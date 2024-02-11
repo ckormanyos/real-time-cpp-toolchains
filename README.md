@@ -34,7 +34,7 @@ and built to run out-of-the-box.
 
 # Finding/Extracting the GNU/GCC Toolchains
 
-Consult the links for the relevant toolchain(s) in the
+Consult the links for the relevant toolchain(s) either in the table above or in the
 [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local)
 directory.
 
