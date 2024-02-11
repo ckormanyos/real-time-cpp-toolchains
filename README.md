@@ -1,10 +1,10 @@
 real-time-cpp-toolchains
 ==================
 
-This repository provides information and links to `Win*`-ported GNU/GCC toolchains
+This repository provides information and links to GNU/GCC toolchains
 synchronized with [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 They can be used (among other purposes) for building the reference application
-(`ref_app`) for embedded targets and the examples on `Win*`.
+(`ref_app`) for embedded targets and the examples on `Win*` and/or `*nix`.
 
 ## Supported Toolchain Targets
 
@@ -21,17 +21,20 @@ They can be used (among other purposes) for building the reference application
 
 ## Further details
 
-These GNU/GCC toolchains are built to run on Windows(R).
-They can be used by developers who optionally run the builds in the
+The references usually include GNU/GCC toolchains built to run on
+`Win*` and also toolchains built to run on `*nix` (and maybe others).
+The `Win*` versions, in particular,
+can be used by developers who optionally run the builds in the
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp)
 repository on `Win*` batches or in Microsoft(R) VisualStudio(R).
+Other standalone uses for any of these toolchains are, of course, possible.
 
-Other standalone uses are, of course, possible with these toolchains.
-They are completely moveable and built to run out-of-the-box.
+The toolchains are typically completely moveable, entirely dependency-free (no DLLs),
+and built to run out-of-the-box.
 
 # Finding/Extracting the GNU/GCC Toolchains
 
-Consult the links for the relevant toolchain(s) in the
+Consult the links for the relevant toolchain(s) either in the table above or in the
 [ref_app/tools/Util/msys64/usr/local](./ref_app/tools/Util/msys64/usr/local)
 directory.
 
