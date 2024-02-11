@@ -56,11 +56,11 @@ In steps:
 These steps are depicted in the images below.
 
 
-✅ <h3><strong>Move or Copy `tools`</strong></h3>
+<h4><strong>1. Move or Copy `tools`</strong></h4>
 
 <kbd><img src="./images/move_copy_tools.jpg" /></kbd>
 
-✅ <h3><strong>Populate Toolchain</strong></h3>
+<h4><strong>2. Populate Toolchain</strong></h4>
 
 <kbd><img src="./images/popuate_gcc_tools.jpg" /></kbd>
 
