@@ -56,14 +56,16 @@ In steps:
 These steps are depicted in the images below.
 
 <p align="center">
-** Move or Copy `tools` **
-![](./images/move_copy_tools.jpg)
+Move or Copy `tools`
 </p>
 
+![](./images/move_copy_tools.jpg)
+
 <p align="center">
-** Populate Toolchain **
-![](./images/popuate_gcc_tools.jpg)
+Populate Toolchain
 </p>
+
+![](./images/popuate_gcc_tools.jpg)
 
 # Using GNU/GCC Toolchains in the `ref_app` VS Solution
 
