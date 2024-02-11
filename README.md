@@ -55,9 +55,7 @@ In steps:
 
 These steps are depicted in the images below.
 
-<p align="center">
-✅&nbsp; <h2><strong>Move or Copy `tools`</strong></h2>
-</p>
+<p align="center">✅&nbsp; <h2><strong>Move or Copy `tools`</strong></h2></p>
 
 <kbd><img src="./images/move_copy_tools.jpg" /></kbd>
 
