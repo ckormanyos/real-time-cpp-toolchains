@@ -43,6 +43,18 @@ The entire content of the relevant toolchain's directory are intended
 to be moved or copied to the corresponding `ref_app` folder in
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp).
 
+In steps:
+  - Move or Copy: `real-time-cpp-toolchains/ref_app/tools` -> `real-time-cpp/ref_app/tools`.
+  - Identify: `real-time-cpp/ref_app/tools/Util/msys64/usr/local`.
+  - Find toolchain folder, for example: `gcc-13.2.0-avr`.
+  - Populate `gcc-13.2.0-avr` with toolchain retrieved from release or similar.
+  - Use a similar process if a different toolchain is needed (like for ARM(R), or others).
+
+These steps are depicted in the images below.
+
+![](./images/move_copy_tools.jpg)
+![](./images/popuate_gcc_tools.jpg)
+
 # Using GNU/GCC Toolchains in the `ref_app` VS Solution
 
 The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository.
