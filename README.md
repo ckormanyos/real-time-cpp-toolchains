@@ -55,16 +55,17 @@ In steps:
 
 These steps are depicted in the images below.
 
-
-<h4><strong>Move or Copy `tools`</strong></h4>
+## Move or Copy `tools`
 
 <kbd><img src="./images/move_copy_tools.jpg" /></kbd>
 
-<h4><strong>Populate Toolchain</strong></h4>
+## Populate Toolchain
 
 <kbd><img src="./images/popuate_gcc_tools.jpg" /></kbd>
 
 # Using GNU/GCC Toolchains in the `ref_app` VS Solution
+
+With the toolchain(s) and tools in place, we are now ready to build with MSVC.
 
 The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository.
   - Clone (or get zip of) the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository, which is the main companion code for the book.
