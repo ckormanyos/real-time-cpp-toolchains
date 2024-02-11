@@ -55,14 +55,15 @@ In steps:
 
 These steps are depicted in the images below.
 
-| -------------------------|
-| Move or Copy tools       |
-| ![](./images/move_copy_tools.jpg) |
+<p align="center">
+** Move or Copy `tools` **
+![](./images/move_copy_tools.jpg)
+</p>
 
-
-| -------------------------------|
-| Populate Toolchain             |
-| ![](./images/popuate_gcc_tools.jpg) |
+<p align="center">
+** Populate Toolchain **
+![](./images/popuate_gcc_tools.jpg)
+</p>
 
 # Using GNU/GCC Toolchains in the `ref_app` VS Solution
 
