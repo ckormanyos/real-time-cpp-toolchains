@@ -55,17 +55,14 @@ In steps:
 
 These steps are depicted in the images below.
 
-==================
 ✅&nbsp; <strong>Move or Copy `tools`</strong>
 
 ![](./images/move_copy_tools.jpg)
 
-==================
 ✅&nbsp; <strong>Populate Toolchain</strong>
 
 ![](./images/popuate_gcc_tools.jpg)
 
-==================
 # Using GNU/GCC Toolchains in the `ref_app` VS Solution
 
 The GNU/GCC toolchains harmonize for use with the [real-time-cpp](https://github.com/ckormanyos/real-time-cpp) repository.
