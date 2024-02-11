@@ -21,13 +21,15 @@ They can be used (among other purposes) for building the reference application
 
 ## Further details
 
-These GNU/GCC toolchains are built to run on Windows(R).
-They can be used by developers who optionally run the builds in the
+The references usually include GNU/GCC toolchains are built to run on
+both `Win*` as well as `*nix`. The `Win*` versions, in particular,
+can be used by developers who optionally run the builds in the
 [real-time-cpp](https://github.com/ckormanyos/real-time-cpp)
 repository on `Win*` batches or in Microsoft(R) VisualStudio(R).
 
-Other standalone uses are, of course, possible with these toolchains.
-They are completely moveable and built to run out-of-the-box.
+Other standalone uses for any of these toolchains are, of course, possible.
+They are typically completely moveable, entirely dependency-free (no DLLs)
+and built to run out-of-the-box.
 
 # Finding/Extracting the GNU/GCC Toolchains
 
