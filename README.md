@@ -61,7 +61,7 @@ These steps are depicted in the images below.
 
 ✅&nbsp; <strong>Populate Toolchain</strong>
 
-![](./images/popuate_gcc_tools.jpg)
+<kbd><img src="./images/popuate_gcc_tools.jpg" /></kbd>
 
 # Using GNU/GCC Toolchains in the `ref_app` VS Solution
 
