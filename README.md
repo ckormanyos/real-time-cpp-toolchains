@@ -55,15 +55,11 @@ In steps:
 
 These steps are depicted in the images below.
 
-<p align="center">
-Move or Copy `tools`
-</p>
+✅&nbsp; <strong>Move or Copy `tools`</strong>
 
 ![](./images/move_copy_tools.jpg)
 
-<p align="center">
-Populate Toolchain
-</p>
+✅&nbsp; <strong>Populate Toolchain</strong>
 
 ![](./images/popuate_gcc_tools.jpg)
 
