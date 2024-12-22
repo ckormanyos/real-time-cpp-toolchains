@@ -1,5 +1,5 @@
-`riscv32-unknown-elf`
+`riscv-none-elf`
 ==================
 
 See also
-[embecosm](https://www.embecosm.com/resources/tool-chain-downloads/#riscv-stable)
+[xpack-dev-tools/riscv-none-elf-gcc-xpack](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack)
